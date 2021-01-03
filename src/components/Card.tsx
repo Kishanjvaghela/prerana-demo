@@ -2,13 +2,13 @@ import * as React from 'react';
 import {View, Text, Button, StyleSheet, Pressable, Image} from 'react-native';
 import globalStyles from '../styles';
 
-const ResumeCard = ({title, onPress}) => {
+const Card = ({title, onPress}) => {
   return (
     <Pressable style={{
       paddingLeft: 20,
       paddingRight: 20,
     }}onPress={onPress}>
-      <View style={[styles.card, globalStyles.cardShadow]}>
+      <View style={[styles.card, globalStyles.cardShadow2]}>
         <Image
           style={styles.image}
           source={require('../assets/images/placeholder-image.png')}
@@ -23,20 +23,20 @@ const ResumeCard = ({title, onPress}) => {
 
 const styles = StyleSheet.create({
   image: {
-    width: '100%',
+    width: 150,
     height: 150,
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
-    borderTopLeftRadius: 14,
-    borderTopRightRadius: 14,
+    borderTopLeftRadius: 8,
+    borderTopRightRadius: 8,
     backgroundColor: '#f0f0f0',
   },
   card: {
-    width: '100%',
+    width: 150,
     height: 200,
     backgroundColor: 'white',
-    borderRadius: 14,
+    borderRadius: 8,
     marginBottom: 14
   },
   title: {
@@ -51,9 +51,9 @@ const styles = StyleSheet.create({
     paddingRight: 10,
     alignItems: 'flex-start',
     justifyContent: 'center',
-    borderBottomLeftRadius: 14,
-    borderBottomRightRadius: 14,
+    borderBottomLeftRadius: 8,
+    borderBottomRightRadius: 8,
   }
 });
 
-export default ResumeCard;
+export default Card;

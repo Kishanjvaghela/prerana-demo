@@ -17,9 +17,10 @@ const styles = StyleSheet.create({
     color: '#673AB7'
   },
   titleContainer: {
-    backgroundColor: 'white',
     paddingTop: 10,
     paddingBottom: 20,
+    paddingLeft: 20,
+    paddingRight: 20,
     alignItems: 'flex-start',
     borderBottomLeftRadius: 14,
     borderBottomRightRadius: 14,
