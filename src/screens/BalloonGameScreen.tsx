@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {View, Text} from 'react-native';
+import FloatingHearts from 'react-native-floating-hearts';
 
 interface Props {}
 
@@ -14,9 +15,8 @@ export default class BalloonGameScreen extends React.Component<Props, State> {
   render() {
     return (
       <View>
-        <Text>
-        BalloonGameScreen
-        </Text>
+        <Text>BalloonGameScreen</Text>
+        <FloatingHearts count={300} color="red"/>
       </View>
     );
   }
